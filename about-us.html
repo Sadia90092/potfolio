@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Portfolio">
+    <meta name="author" content="Portfolio">
+    <title>Sadia Mustafa</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/unicons.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" href="css/tooplate-style.css">
+  </head>
+  <body>
+    <!-- MENU -->
+    <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class='uil uil-user'></i>Sadia Mustafa</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a href="about-us.html" class="nav-link"><span data-hover="About">About</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="portfolio-type.html" class="nav-link"><span data-hover="Portfolio">Portfolio</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="resume.html" class="nav-link"><span data-hover="Resume">Resume</span></a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-lg-auto">
+                    <div class="ml-lg-4">
+                      <div class="color-mode d-lg-flex justify-content-center align-items-center">
+                        <i class="color-mode-icon"></i>
+                        Color mode
+                      </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- nav end -->
+    <section class="about-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>About Us</h1>
+                    <p>Experienced Angular and .NET Developer with 6+ Working Experience and a passion for crafting robust web
+                      applications. Skilled in TypeScript, RxJS, and Angular for front-end development, and C#, ASP.NET, and .NET
+                      Core for back-end development. Strong collaborator and advocate for code quality and continuous learning As
+                      a Software Developer, she is primarily responsible for providing development, enhancement, troubleshooting,
+                      and maintenance for software application.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+   <!-- FOOTER -->
+   <footer class="footer py-5">
+    <div class="container">
+         <div class="row">
+          <div class="col-md-12">
+            <div class="socil-link">
+              <ul>
+                <li>
+                  <a href="https://www.linkedin.com/in/sadia-mustafa-4ab293281" target="_blank"><img src = "images/linkedin.png" alt="My Happy SVG"/></a>
+                  <a href="https://github.com/Ninjamateen/portfolio" target="_blank"><img src = "images/github.png" alt="My Happy SVG"/></a>
+                  <iconify-icon icon="devicon:linkedin"></iconify-icon></li>
+              </ul>
+            </div>
+          </div>
+            <div class="col-lg-12 col-12">     
+              <p class="copyright-text text-center">Copyright &copy; 2023 All rights reserved By Sadia Mustafa</p>                    
+            </div>
+         </div>
+    </div>
+  </footer>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/Headroom.js"></script>
+<script src="js/jQuery.headroom.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/custom.js"></script>
+<script>
+let count = document.querySelectorAll(".count")
+let arr = Array.from(count)
+arr.map(function(item){
+let startnumber = 0
+
+function counterup(){
+startnumber++
+item.innerHTML= startnumber
+if(startnumber == item.dataset.number){
+  clearInterval(stop)
+}
+}
+let stop =setInterval(function(){
+counterup()
+},50)
+
+})
+</script>
+</body>
+</html>
